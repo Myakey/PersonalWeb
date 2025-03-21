@@ -35,7 +35,7 @@
 
 body{
     padding-top: 80px;
-    background: url(../assets/bluetilesback.jpg);
+    background: url(/assets/bluetilesback.jpg);
     font-family: var(--body-font);
     font-size:var(--normal-font-size);
     color: var(--text-color);
