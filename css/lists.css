@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+    --header-height: 3rem;
+
+
+    /*COLORS*/
+    --first-color: aliceblue;
+    --first-color-light: gold;
+    --first-color-dark: #00766C;
+    --first-color-darker: #004D44;
+    --first-color-shadow: rgba(0, 118, 108, 0.1);
+
+    --title-color: #11443F;
+    --text-color: #5B7B78;
+    --body-color:#F5FFFE;
+
+    --body-font: "Poppins", sans-serif;
+    --bigest-font-size: 3rem;
+    --big-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 970px;
+    }
+}
+
+body{
+    padding-top: 80px;
+    background: url(../assets/bluetilesback.jpg);
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Highlight*/
+
+.highlight__cont{
+    position: relative;
+    height: 100%;
+    display: grid;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.highlight__title{
+    font-size: var(--bigest-font-size);
+    font-weight: 800;
+    color: var(--first-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.highlight__desc{
+    font-size: (--font-medium);
+    font-weight: 500;
+    color: var(--first-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.lst{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    border-bottom: #F5FFFE 3px solid;
+
+
+}
+
+.subtext{
+    font-size: var(--big-font-size);
+    color: var(--first-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.cards__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.3rem;
+}
+
+#card{
+    border-radius: 0.3rem;
+    transition: 0.4s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+#card:hover{
+    border-radius: 0.3rem;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 1px 12px rgba(0,0,0,0.5);
+    transform: scale(0.98)
+}
+
+
+
+
+
+/*Navbar*/
+.main{
+    position: relative;
+}
+
+.bd-container{
+    max-width: 960px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+
+.container{
+    width: 95%;
+}
+
+.offcanvas-custo {
+    width: 75%; 
+}
+
+#navfont{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#maintitle{
+    font-size: 5vh;
+}
+
+@media (min-width: 576px) {
+    .offcanvas-custo {
+        width: 50%; 
+    }
+}
+
+@media (min-width: 768px) {
+    .offcanvas-custo {
+        width: 30%; 
+    }
+}
+
+@media (min-width: 992px) {
+    .offcanvas-custo {
+        width: 25%; 
+    }
+}
+
+
+.sidebar{
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,94,184,0.15);
+}
+
+#navcol{
+    color:black;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: 800;
+}
+
+#navcol:hover{
+    background-color: rgb(200,233,233);
+    border-radius: 15px;
+    padding: 10px;
+    color: rgb(29,189,243);
+}
+
+.bg{
+    background-color: rgba(29, 189, 243, 1);
+}
+
+#highlight{
+    width: 100%;
+}
+
+.navbar{
+    margin-top: 0;
+    padding: 10px;
+    height: 15%;
+}
+
+
+.offcanvas-custo {
+    width: 75%; 
+}
+
+@media (min-width: 200px) {
+    .navbar {
+        width: 100%;
+        z-index: 1030;
+        height:auto;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .offcanvas-custo {
+        width: 50%; 
+    }
+    .navbar {
+        width: 100%;
+        z-index: 1030;
+       
+    }
+}
+
+@media (max-width: 768px) {
+    .offcanvas-custo {
+        width: 0%; 
+    }
+    .navbar {
+        width: 100%;
+        z-index: 1030;
+       
+    }
+}
+
+@media (min-width: 992px) {
+    .offcanvas-custo {
+        width: 25%; 
+    }
+    .navbar {
+        width: 100%;
+        z-index: 1030;
+        height: auto;
+    }
+}
+
+
+
+
+
